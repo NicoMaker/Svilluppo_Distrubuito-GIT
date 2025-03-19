@@ -215,3 +215,9 @@ In Git, i file all'interno di un progetto possono trovarsi in **tre stati princi
 ✅ Evita **perdite di dati** accidentali.  
 ✅ Permette di **organizzare le modifiche** prima di salvarle nella storia del progetto.
 
+## comandi configurazione utente del git
+
+```bash
+git config --global user.name "username"
+git config --global user.email "email"
+```
