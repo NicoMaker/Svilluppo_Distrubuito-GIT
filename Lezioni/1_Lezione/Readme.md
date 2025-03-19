@@ -487,6 +487,21 @@ git merge <branch_name> # unisce un ramo con il ramo attuale
 git merge --abort # annulla il merge
 ```
 
+## Rebase
+
+```bash
+git checkout <branch_name> # cambia il ramo attuale
+git rebase <branch_name> # unisce un ramo con il ramo attuale
+git rebase --abort # annulla il rebase
+```
+
+## Merge modifcihe da un branch al main come si fa ?
+
+```bash
+git checkout main # cambia il ramo attuale
+git merge <branch_name> # unisce un ramo con il ramo attuale
+```
+
 # Progetti
 
 - [1 Progetto](Progetti/1_Progetto)
