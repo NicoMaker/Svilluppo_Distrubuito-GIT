@@ -502,6 +502,20 @@ git checkout main # cambia il ramo attuale
 git merge <branch_name> # unisce un ramo con il ramo attuale
 ```
 
+## Opzioni Git
+
+aggiunge e basta non elimina -> elimina che un altro commit con scritte rm 
+
+
+## Merge
+
+```bash
+git merge --squash <branch_name> # unisce un ramo con il ramo attuale
+git merge --squash <branch_name> # unisce un ramo con il ramo attuale
+git rebase -i HEAD~2 # rebase con interazione
+git rebase -i HEAD~2 # rebase con interazione
+```
+
 # Progetti
 
 - [1 Progetto](Progetti/1_Progetto)
