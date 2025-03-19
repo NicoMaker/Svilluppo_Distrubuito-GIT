@@ -249,3 +249,7 @@ git add . # aggiungi tutti i file e cartelle nella directory corrente
 git commit -m "commit" # salva tutti i file aggiunti nella directory corrente
 git push origin main # pusha la directory corrente nella branch main
 ```
+
+# Progetti 
+
+- [1 Progetto](Progetti/Index.html)
