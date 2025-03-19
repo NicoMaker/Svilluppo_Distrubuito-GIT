@@ -315,6 +315,9 @@ git commit -m "commit" # salva tutti i file aggiunti nella directory corrente
 ```bash
 git pull # scarica le modifiche da un repository remoto
 git push # invia le modifiche al repository remoto
+
+git config --global alias.sync '!git pull && git push' # crea un alias
+git sync # usa l'alias
 ```
 
 # Progetti
