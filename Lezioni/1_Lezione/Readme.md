@@ -455,6 +455,7 @@ git push origin <nome tag> # invia un tag al repository remoto
 
 ```bash
 git checkout <branch_name> # cambia il ramo attuale
+git checkout -v # visualizza il ramo attuale
 ```
 
 ## Branch
