@@ -342,10 +342,111 @@ git tag <nome_tag> # crea un nuovo tag
 git tag -d <nome_tag> # elimina un tag
 ```
 
-## dog
+## graph
 
 ```bash
-git log --all # visualizza tutti i tag
+git log --all --decorate --oneline --graph # visualizza tutti i commit
+git config --global alias.graph "log --all --decorate --oneline --graph"
+git graph
+```
+
+## Checkout
+
+```bash
+git checkout <branch_name> # cambia la branch attuale
+git checkout -b <branch_name> # crea una nuova branch e cambia la branch attuale
+git checkout - # torna alla branch precedente
+```
+
+## Remoke
+
+```bash
+git remote add origin <repository_url> # aggiunge un repository remoto
+git remote remove origin # rimuove un repository remoto
+```
+
+## Pull Request
+
+```bash
+git pull <repository_url> <branch_name> # scarica le modifiche da un repository remoto
+git push <repository_url> <branch_name> # invia le modifiche al repository remoto
+```
+
+## Fork
+
+```bash
+git clone <repository_url> # clona un repository remoto
+git push --set-upstream <repository_url> <branch_name> # invia le modifiche al repository remoto
+```
+
+## Fetch
+
+Il comando `git fetch` viene utilizzato per recuperare gli aggiornamenti da un repository remoto senza unire automaticamente tali modifiche al tuo repository locale. In pratica, `git fetch` scarica i dati più recenti dal remoto (come i commit, i rami, i tag, ecc.) e li aggiorna nel tuo repository locale, ma non modifica la tua copia di lavoro attuale.
+
+### Cosa fa `git fetch`?
+
+- **Scarica i cambiamenti:** Recupera le modifiche dal repository remoto, inclusi nuovi commit, branch e tag.
+- **Non fa merge:** A differenza di `git pull`, che scarica i cambiamenti e li fonde automaticamente con il tuo ramo attuale, `git fetch` non unisce nulla. Solo scarica i cambiamenti, lasciandoti la possibilità di decidere cosa fare con loro.
+- **Aggiorna i rami remoti:** Aggiorna i riferimenti ai rami remoti, come `origin/main` o `origin/develop`.
+
+### Sintassi di base:
+
+```bash
+git fetch [nome-remoto] [ramo]
+```
+
+- **`nome-remoto`**: Di solito è `origin`, che è il nome predefinito del repository remoto quando cloni un repository. Puoi avere più remoti configurati, quindi potresti avere anche un altro nome, ma per la maggior parte dei casi sarà `origin`.
+- **`ramo`** (opzionale): Se vuoi recuperare solo un ramo specifico dal remoto, puoi indicarlo. Se non lo specifichi, `git fetch` recupera tutti i rami remoti.
+
+### Esempio:
+
+1. **Fetch da remoto**:
+
+   ```bash
+   git fetch origin
+   ```
+
+   Questo comando scarica gli aggiornamenti dal remoto chiamato `origin` (che è il repository remoto predefinito) senza fondere i cambiamenti.
+
+2. **Fetch di un singolo ramo**:
+
+   ```bash
+   git fetch origin main
+   ```
+
+   Questo recupera solo il ramo `main` dal repository remoto `origin`.
+
+### Dopo il fetch
+
+Dopo aver eseguito `git fetch`, puoi vedere le modifiche scaricate tramite:
+
+```bash
+git log origin/main
+```
+
+Questa operazione ti mostrerà la cronologia dei commit del ramo remoto `main`. Ora puoi decidere se fondere questi cambiamenti nel tuo ramo attuale con `git merge` o `git rebase`.
+
+Per esempio, se vuoi unire le modifiche remote nel tuo ramo locale, esegui:
+
+```bash
+git merge origin/main
+```
+
+### Quando usare `git fetch`?
+
+- **Per vedere gli aggiornamenti senza applicarli subito:** Puoi utilizzare `git fetch` per controllare cosa è cambiato nel repository remoto senza fondere immediatamente le modifiche nel tuo ramo attuale.
+- **Prima di fare un pull:** Se hai bisogno di essere sicuro che stai recuperando l'ultima versione dei dati remoti, eseguire prima `git fetch` ti dà il controllo su cosa succede successivamente.
+
+In sintesi, `git fetch` è utile per scaricare gli aggiornamenti dal repository remoto e analizzare cosa è cambiato prima di decidere di unire le modifiche nel tuo lavoro locale.
+
+## Tag
+
+```bash
+git tag <tag_name> # crea un tag
+git tag -d <tag_name> # elimina un tag
+git push --tags # invia tutti i tag al repository remoto
+
+git tag --a # visualizza tutti i tag
 ```
 
 # Progetti
