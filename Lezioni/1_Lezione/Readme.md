@@ -265,6 +265,27 @@ git push origin main # pusha la directory corrente nella branch main
 
 ```
 
+### Stati dei File in Git
+
+1. **Untracked**: Un file "untracked" è presente nel progetto ma non è ancora stato aggiunto al controllo di versione. Git non tiene traccia delle modifiche a quel file. Puoi rimuoverlo dall'indice con:
+
+   ```bash
+   git rm --cached <file>
+   ```
+
+2. **Modified**: Un file è "modified" quando è stato cambiato dopo l'ultimo commit, ma non è ancora stato aggiunto all'area di staging. Per includerlo nel prossimo commit, usa:
+
+   ```bash
+   git add <file>
+   ```
+
+3. **Add**: Il comando `git add <file>` sposta i file modificati o nuovi nell'area di staging, segnalandoli per il prossimo commit. Dopo aver aggiunto il file, puoi committarlo con:
+   ```bash
+   git commit -m "Messaggio del commit"
+   ```
+
+Questa versione è più sintetica e pronta per essere inclusa in un file `README.md`.
+
 # Progetti
 
 - [1 Progetto](Progetti/1_Progetto)
