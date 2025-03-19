@@ -221,3 +221,7 @@ In Git, i file all'interno di un progetto possono trovarsi in **tre stati princi
 git config --global user.name "username"
 git config --global user.email "email"
 ```
+
+```bash
+git comnfig --list  # visualizza tutti i parametri configurati
+```
