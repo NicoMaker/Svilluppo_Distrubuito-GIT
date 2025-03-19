@@ -471,6 +471,21 @@ git checkout develop # cambia il ramo attuale
 git checkout - # torna alla branch precedente
 ```
 
+## Head
+
+```bash
+git branch # visualizza tutti i rami
+git branch -a # visualizza tutti i rami e i tag
+```
+
+## Merge
+
+```bash
+git checkout <branch_name> # cambia il ramo attuale
+git merge <branch_name> # unisce un ramo con il ramo attuale
+git merge --abort # annulla il merge
+```
+
 # Progetti
 
 - [1 Progetto](Progetti/1_Progetto)
