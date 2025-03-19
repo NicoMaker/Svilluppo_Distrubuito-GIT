@@ -284,7 +284,38 @@ git push origin main # pusha la directory corrente nella branch main
    git commit -m "Messaggio del commit"
    ```
 
-- tutto vine salvato nella storia di git -> lui tiene in memoria tutti i dati e per modifiche li confronta e scegle solo la parte corretta  che serve
+- tutto vine salvato nella storia di git -> lui tiene in memoria tutti i dati e per modifiche li confronta e scegle solo la parte corretta che serve
+
+## cl0no repository
+
+```bash
+git clone <repository_url> <directory_name> # clona un repository remoto
+```
+
+## pull request
+
+```bash
+git pull <repository_url> <branch_name> # scarica le modifiche da un repository remoto
+```
+
+## push
+
+```bash
+git push <repository_url> <branch_name> # invia le modifiche al repository remoto
+```
+
+## commit
+
+```bash
+git commit -m "commit" # salva tutti i file aggiunti nella directory corrente
+```
+
+## sincronizzazione 
+
+```bash
+git pull # scarica le modifiche da un repository remoto
+git push # invia le modifiche al repository remoto
+```
 
 # Progetti
 
