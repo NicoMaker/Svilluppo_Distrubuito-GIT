@@ -457,6 +457,20 @@ git push origin <nome tag> # invia un tag al repository remoto
 git checkout <branch_name> # cambia il ramo attuale
 ```
 
+## Branch
+
+```bash
+git branch <branch_name> # crea un ramo
+git branch -d <branch_name> # elimina un ramo
+git push origin <branch_name> # invia un ramo al repository remoto
+git checkout -b <branch_name> # crea e cambia il ramo attuale
+git checkout <branch_name> # cambia il ramo attuale
+git checkout master # cambia il ramo attuale
+git checkout main # cambia il ramo attuale
+git checkout develop # cambia il ramo attuale
+git checkout - # torna alla branch precedente
+```
+
 # Progetti
 
 - [1 Progetto](Progetti/1_Progetto)
