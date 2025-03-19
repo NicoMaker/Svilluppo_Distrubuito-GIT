@@ -447,6 +447,8 @@ git tag -d <tag_name> # elimina un tag
 git push --tags # invia tutti i tag al repository remoto
 
 git tag --a # visualizza tutti i tag
+
+git push origin <nome tag> # invia un tag al repository remoto
 ```
 
 # Progetti
