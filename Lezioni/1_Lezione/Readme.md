@@ -284,7 +284,7 @@ git push origin main # pusha la directory corrente nella branch main
    git commit -m "Messaggio del commit"
    ```
 
-Questa versione è più sintetica e pronta per essere inclusa in un file `README.md`.
+- tutto vine salvato nella storia di git -> lui tiene in memoria tutti i dati e per modifiche li confronta e scegle solo la parte corretta  che serve
 
 # Progetti
 
