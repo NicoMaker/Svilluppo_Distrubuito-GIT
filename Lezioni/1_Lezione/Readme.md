@@ -451,6 +451,12 @@ git tag --a # visualizza tutti i tag
 git push origin <nome tag> # invia un tag al repository remoto
 ```
 
+## Chechout
+
+```bash
+git checkout <branch_name> # cambia il ramo attuale
+```
+
 # Progetti
 
 - [1 Progetto](Progetti/1_Progetto)
