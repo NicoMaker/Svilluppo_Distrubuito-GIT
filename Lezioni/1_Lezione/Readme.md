@@ -157,3 +157,61 @@ Lo **sviluppo distribuito** è uno dei punti di forza di Git. Grazie alla possib
 
 🚀 _Git semplifica la collaborazione e garantisce che il tuo codice sia sempre al sicuro!_
 
+---
+
+# **📂 I Tre Stati dei Dati nella Repository Git**
+
+In Git, i file all'interno di un progetto possono trovarsi in **tre stati principali**:
+
+1. 📝 **Modificato (Modified)**
+2. 📌 **Staged (In Stage)**
+3. ✅ **Commit (Committed)**
+
+---
+
+## **📝 1. Stato Modificato (Modified)**
+
+🔹 Il file è stato modificato, ma **Git non lo ha ancora tracciato** ufficialmente.  
+🔹 Le modifiche sono solo **nel file locale**, senza essere preparate per il commit.  
+🔹 Se chiudi il progetto senza salvare lo stato, potresti perdere queste modifiche.
+
+📍 _Esempio:_ Hai cambiato una riga di codice in un file, ma Git non è ancora stato informato della modifica.
+
+---
+
+## **📌 2. Stato Staged (In Stage)**
+
+🔹 Il file è stato aggiunto all’**area di staging**, pronto per essere salvato nella cronologia.  
+🔹 Git ora sa che il file deve essere incluso nel prossimo commit.  
+🔹 Puoi continuare a lavorare su altri file senza compromettere quelli già aggiunti allo staging.
+
+📍 _Esempio:_ Dopo aver modificato un file, lo hai segnato come pronto per il commit, ma non è ancora registrato nella cronologia ufficiale.
+
+---
+
+## **✅ 3. Stato Committed (Commit Salvato)**
+
+🔹 Il file è stato **ufficialmente salvato nella repository Git**, diventando parte della cronologia.  
+🔹 Il commit include una descrizione delle modifiche, permettendo di tornare indietro se necessario.  
+🔹 Questo è lo stato più sicuro: le modifiche sono registrate e pronte per essere sincronizzate con altri sviluppatori.
+
+📍 _Esempio:_ Hai salvato le modifiche con un commit e ora fanno parte della storia del progetto.
+
+---
+
+## **📊 Riepilogo dei Tre Stati**
+
+| Stato          | Descrizione                                        | Icona |
+| -------------- | -------------------------------------------------- | ----- |
+| **Modificato** | Il file è cambiato, ma Git non lo traccia ancora.  | 📝    |
+| **Staged**     | Il file è pronto per essere salvato con un commit. | 📌    |
+| **Committed**  | Il file è stato salvato nella cronologia Git.      | ✅    |
+
+---
+
+### 🎯 **Perché è importante conoscere questi stati?**
+
+✅ Aiuta a **gestire meglio le modifiche** nei file.  
+✅ Evita **perdite di dati** accidentali.  
+✅ Permette di **organizzare le modifiche** prima di salvarle nella storia del progetto.
+
