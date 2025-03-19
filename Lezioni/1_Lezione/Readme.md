@@ -252,4 +252,4 @@ git push origin main # pusha la directory corrente nella branch main
 
 # Progetti 
 
-- [1 Progetto](Progetti/Index.html)
+- [1 Progetto](Progetti/1_Progetto/Readme.md)
