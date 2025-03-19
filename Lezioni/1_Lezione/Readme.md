@@ -226,5 +226,6 @@ git config --global user.email "email"
 git comnfig --list  # visualizza tutti i parametri configurati
 git init # inizializza una nuova repository
 
-ls -la # visualizza tutti i file e cartelle nella directory corrente
+ls -la # visualizza tutti i file e cartelle nella directory corrente solo su git bash
+dir # visualizza tutti i file e cartelle nella directory corrente solo su cmd o poweshell 
 ```
