@@ -227,7 +227,7 @@ git comnfig --list  # visualizza tutti i parametri configurati
 git init # inizializza una nuova repository
 
 ls -la # visualizza tutti i file e cartelle nella directory corrente solo su git bash
-dir # visualizza tutti i file e cartelle nella directory corrente solo su cmd o poweshell 
+dir # visualizza tutti i file e cartelle nella directory corrente solo su cmd o poweshell
 
 cd .. # per tornare al directory padre
 ```
@@ -238,11 +238,11 @@ cd .. # per tornare al directory padre
 git branch # visualizza tutti i branch
 git branch <nome_branch> # crea un nuovo branch
 git branch -d <nome_branch> # elimina un branch
-git checkout main # cambia la branch attuale   
-git branch -a # visualizza tutti i branch locali e remoti 
+git checkout main # cambia la branch attuale
+git branch -a # visualizza tutti i branch locali e remoti
 ```
 
-# per pushare una cartella 
+## per pushare una cartella
 
 ```bash
 git add . # aggiungi tutti i file e cartelle nella directory corrente
@@ -250,6 +250,21 @@ git commit -m "commit" # salva tutti i file aggiunti nella directory corrente
 git push origin main # pusha la directory corrente nella branch main
 ```
 
-# Progetti 
+## Status branch
+
+```bash
+git status # visualizza tutti i file e cartelle nella directory corrente
+
+git add . # aggiungi tutti i file e cartelle nella directory corrente
+
+git status # visualizza tutti i file e cartelle nella directory corrente
+
+git commit -m "commit" # salva tutti i file aggiunti nella directory corrente
+
+git push origin main # pusha la directory corrente nella branch main
+
+```
+
+# Progetti
 
 - [1 Progetto](Progetti/1_Progetto/Readme.md)
