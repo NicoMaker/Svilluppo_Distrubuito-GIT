@@ -310,7 +310,7 @@ git push <repository_url> <branch_name> # invia le modifiche al repository remot
 git commit -m "commit" # salva tutti i file aggiunti nella directory corrente
 ```
 
-## sincronizzazione 
+## sincronizzazione
 
 ```bash
 git pull # scarica le modifiche da un repository remoto
@@ -318,6 +318,34 @@ git push # invia le modifiche al repository remoto
 
 git config --global alias.sync '!git pull && git push' # crea un alias
 git sync # usa l'alias
+```
+
+## diff (differenze) tra i file
+
+```bash
+git diff # visualizza le modifiche nella directory corrente
+
+git diff --staged # visualizza le modifiche nella directory corrente che sono state aggiunte all'area di staging
+```
+
+## log
+
+```bash
+git log # visualizza le modifiche nella directory corrente
+```
+
+## tag
+
+```bash
+git tag # visualizza tutti i tag
+git tag <nome_tag> # crea un nuovo tag
+git tag -d <nome_tag> # elimina un tag
+```
+
+## dog
+
+```bash
+git log --all # visualizza tutti i tag
 ```
 
 # Progetti
