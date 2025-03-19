@@ -1,2 +1,5 @@
 # Svilluppo_Distrubuito-GIT
-Argomenti di una materia del corso Front-End dell'ITS Alto Adriatico
+
+# Lezioni
+
+- [Lezione 1](Lezioni//1_Lezione/Readme.md)
