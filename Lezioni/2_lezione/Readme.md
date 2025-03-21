@@ -15,6 +15,12 @@ git pull <repository_url> <branch_name> # scarica le modifiche da un repository 
 git push <repository_url> <branch_name> # invia le modifiche al repository remoto
 ```
 
+## Clone
+
+```bash
+git clone <nome repository>
+```
+
 # Progetti
 
 - [1 Progetto](Progetti/1_Progetto)
