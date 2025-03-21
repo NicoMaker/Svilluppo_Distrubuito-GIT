@@ -8,7 +8,7 @@ Git offre la possibilità di lavorare su funzionalità separate, creando **rami*
 
 ---
 
-## Comandi  PULL e PUSH 
+## Comandi PULL e PUSH
 
 ```bash
 git pull <repository_url> <branch_name> # scarica le modifiche da un repository remoto
@@ -19,6 +19,12 @@ git push <repository_url> <branch_name> # invia le modifiche al repository remot
 
 ```bash
 git clone <nome repository>
+```
+
+## Merge repository da un branch ad un altro
+
+```bash
+git merge <branch_name> # unisce un ramo con il ramo attuale
 ```
 
 # Progetti
